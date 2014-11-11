@@ -4,7 +4,7 @@
 
 	require 'stgagi.php';
 
-	if (!$_ENV['AST_AGI_DIR'])
+	if (!$_SERVER['AST_AGI_DIR'])
 	{
 		print("error: this is an agi program\n");
 		exit(1);

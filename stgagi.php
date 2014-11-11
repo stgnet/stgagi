@@ -10,6 +10,7 @@
 
 	// deprecated: define_syslog_variables();
 	openlog(preg_replace('_.*/_','',$argv[0]),LOG_PID,LOG_LOCAL0);
+	//syslog(LOG_NOTICE,"STARTUP: ".$_SERVER['SCRIPT_FILENAME']);
 
 	// use like this:
 	//$amp_conf = parse_conf("/etc/amportal.conf");
